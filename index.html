@@ -6,23 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giphy Party</title>
 
+    <!-- leave this next script import here! -->
+    <script id="test-env-setup" src="tests/test-env.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Giphy Party</h1>
-    
+
     <form id="search-form">
-        <input id="search-input" name="search" placeholder="Enter a search term" class="" />
-        <button type="submit" class="search-btn">Search Giphy!</button>
+        <input id="search-input" required name="search" placeholder="Enter a search term" class="" />
+        <button id="search-button" type="submit" class="search-btn">Search Giphy!</button>
     </form>
 
-    <div id="gif-area">
-    </div>
+    <div id="results"></div>
 
     <div class="show-more-area">
-        <button id="show-me-more-btn" type="button" class="search-btn hidden">Show me more GIFs!</button>
+        <button id="show-more-button" type="button" class="search-btn hidden">Show me more GIFs!</button>
     </div>
 
-    <script src="app.js"></script>
+    <script src="script.js"></script>
+    <script src="tests/setup.js"></script>
 </body>
+
 </html>
